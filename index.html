@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="color-theme" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" rel="preload" type="text/css" href="static/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="animate__inner">
+          <div class="animate__line"></div>
+        </div><img class="header__img" src="static/images/top-img.png" alt="Логотип">
+        <div class="header__logo logo"><img src="static/images/logo.svg" alt="Логотип"></div>
+        <h1>Конференции, которые нужны</h1>
+        <p>Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.</p>
+        <p>С нас — крутая программа, топовые спикеры, технические доклады без воды.</p>
+        <p>С вас — готовность смотреть и общаться.</p>
+        <div class="header__btn"> 
+          <button class="Button Button_orange" type="button"><img src="static/images/men.png" alt="Логотип"><span>Купить билет </span></button>
+          <button class="Button" type="button" data-popup-target="#quest"><img src="static/images/men2.png" alt="Логотип"><span>Купить билет</span></button>
+        </div>
+      </header>
+
+    </div>
+    <div class="popup popup_black" data-popup-id="#quest">
+      <div class="popup__top"> <img src="static/images/men3.png" alt="Логотип">
+        <h2>Идите в жопу!</h2>
+      </div>
+      <div class="popup__body">
+        <div class="question">
+          <div class="question__item" data-popup-target="#success">Вы свои цены видели?</div>
+          <div class="question__item" data-popup-target="#success">Доклады ни о чем</div>
+          <div class="question__item" data-popup-target="#success">У вас там всё хорошо?</div>
+          <div class="question__item" data-popup-target="#success">Денег нет, но вы держитесь</div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup_success popup_black" data-popup-id="#success">
+      <div class="popup__success"><img src="static/images/like.png" alt="лайк">
+        <h3>Спасибо, что поделились!</h3>
+      </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
